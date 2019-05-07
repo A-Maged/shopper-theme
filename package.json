@@ -1,0 +1,16 @@
+{
+	"name": "theme",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"dev": "parcel home.html"
+	},
+	"dependencies": {
+		"bootstrap": "^4.3.1",
+		"jquery": "^3.4.1"
+	},
+	"devDependencies": {
+		"sass": "^1.20.1"
+	}
+}
