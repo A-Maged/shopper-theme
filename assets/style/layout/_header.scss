@@ -35,26 +35,13 @@ $header-height: 500px;
 		}
 	}
 
-	#top-bar {
-		background: #fff;
-		#logo {
-			padding: 15px;
-		}
-		#main-nav {
-			a {
-				display: inline-block;
-				padding: 15px;
-			}
-		}
-	}
-
 	#header-content {
 		position: absolute;
 		top: 56%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		color: #fff;
-		max-width: 500px;
+		max-width: 600px;
 		margin: auto;
 		text-align: center;
 	}

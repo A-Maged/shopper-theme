@@ -1,9 +1,10 @@
 .product {
-	// background: green;
+	max-width: 220px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 30px;
 
 	&__img {
-		// width: 254px;
 		height: 254px;
 		img {
 			width: 100%;
@@ -15,6 +16,17 @@
 	}
 
 	&__add-to-cart-btn {
+		border-radius: 0;
+		text-transform: capitalize;
+		font-size: 13px;
+		font-weight: bold;
+		background: #8224e3;
+		border-color: #8224e3;
+		color: #fff;
+		&:hover {
+			border: 1px solid #333;
+			background: #fff;
+		}
 	}
 
 	&__price {

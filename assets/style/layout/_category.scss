@@ -3,8 +3,10 @@
 		margin-bottom: 65px;
 
 		&:nth-of-type(even) {
-			.category-info-wrapper {
-				order: 2;
+			@media (min-width: 768px) {
+				.category-info-wrapper {
+					// order: 2;
+				}
 			}
 		}
 
@@ -15,8 +17,19 @@
 			background-size: cover !important;
 			background-repeat: no-repeat !important;
 			margin-bottom: 15px;
+			padding: 0;
+			.overlay {
+				padding: 15px;
+			}
 			.category-info {
 				// padding: 0 30px;
+				.category-title {
+					text-transform: uppercase;
+					font-size: 26px;
+					font-weight: bold;
+				}
+				.category-description {
+				}
 				button {
 					text-transform: capitalize;
 					font-size: 16px;
@@ -32,21 +45,16 @@
 						color: #333;
 					}
 				}
-				.category-title {
-					text-transform: uppercase;
-				}
-				.category-description {
-				}
 			}
 		}
 
 		.category-products {
-			&:nth-of-type(even) {
-				padding-left: 0;
-			}
-			&:nth-of-type(odd) {
-				padding-right: 0;
-			}
+			// &:nth-of-type(even) {
+			// 	padding-left: 0;
+			// }
+			// &:nth-of-type(odd) {
+			// 	padding-right: 0;
+			// }
 		}
 	}
 }
