@@ -4,16 +4,26 @@
 		padding: 15px;
 	}
 
-	#main-nav {
-		a {
+	.right-wrapper {
+		text-align: right;
+
+		.form-inline {
 			display: inline-block;
-			padding: 15px;
-			text-transform: capitalize;
-			font-weight: bold;
-			color: #333;
-			text-decoration: none;
-			&:hover {
-				color: #aaa;
+		}
+
+		#main-nav {
+			display: inline-block;
+
+			a {
+				display: inline-block;
+				padding: 15px;
+				text-transform: capitalize;
+				// font-weight: bold;
+				color: $title-color;
+				text-decoration: none;
+				&:hover {
+					color: #aaa;
+				}
 			}
 		}
 	}

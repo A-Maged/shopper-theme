@@ -12,6 +12,15 @@
 }
 
 body {
+	color: $body-color;
+	font-family: 'Roboto', sans-serif;
 	overflow-wrap: break-word;
-	// background: pink;
+}
+
+button {
+	border-radius: 0 !important;
+	&:focus {
+		outline: none !important;
+		box-shadow: none !important;
+	}
 }

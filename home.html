@@ -4,6 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:400,500"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="assets/style/index.scss" />
 	</head>
 	<body>
@@ -17,13 +21,23 @@
 							</div>
 						</div>
 						<div class="col-md-8">
-							<nav id="main-nav" class="text-right">
-								<a href="#">clothing</a>
-								<a href="#">accessories</a>
-								<a href="#">shoes</a>
-								<a href="#">blog</a>
-								<a href="#">contact</a>
-							</nav>
+							<div class="right-wrapper">
+								<nav id="main-nav" class="text-right">
+									<a href="#">clothing</a>
+									<a href="#">accessories</a>
+									<a href="#">shoes</a>
+									<a href="#">blog</a>
+									<a href="#">contact</a>
+								</nav>
+								<form class="form-inline">
+									<input
+										class="form-control mr-sm-2"
+										type="search"
+										placeholder="Search"
+										aria-label="Search"
+									/>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -50,218 +64,376 @@
 			</div>
 		</header>
 
-		<main class="container">
+		<main>
 			<div id="content">
+				<!-- listing section -->
+				<div class="section listing">
+					<div class="container">
+						<div class="listing__info">
+							<h2 class="listing__info__title">Trending Products</h2>
+							<p class="listing__info__description">Lorem ipsum dolor sit amet</p>
+						</div>
+
+						<!-- products -->
+						<div class="listing__products">
+							<div class="row">
+								<div class="col-xs-12 col-sm-6 col-lg-3">
+									<div class="product">
+										<div class="product__img">
+											<img
+												src="assets/images/Irregular-Women-s-Office-Lady-Shirt-Top.webp"
+											/>
+										</div>
+										<h6 class="product__title">Irregular Womens Office Lady Shirt Top</h6>
+										<div class="product__footer">
+											<button class="product__add-to-cart-btn btn">
+												add to cart
+											</button>
+											<p class="product__price">$30.00</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-lg-3 ">
+									<div class="product">
+										<div class="product__img">
+											<img
+												src="assets/images/Classic-Polarized-Sunglasses-Men-Women.webp"
+											/>
+										</div>
+										<h6 class="product__title">Women’s Ripped Denim</h6>
+										<div class="product__footer">
+											<button class="product__add-to-cart-btn btn">
+												add to cart
+											</button>
+											<p class="product__price">$27.00</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-lg-3 ">
+									<div class="product">
+										<div class="product__img">
+											<img src="assets/images/product-photo-40-400x400.png" />
+										</div>
+										<h6 class="product__title">Women’s Ripped Denim</h6>
+										<div class="product__footer">
+											<button class="product__add-to-cart-btn btn">
+												add to cart
+											</button>
+											<p class="product__price">$24.00</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-lg-3">
+									<div class="product">
+										<div class="product__img">
+											<img src="assets/images/4pcs-set-Handmade-Boho-Gypsy-Hippie.webp" />
+										</div>
+										<h6 class="product__title">Women’s Ripped Denim</h6>
+										<div class="product__footer">
+											<button class="product__add-to-cart-btn btn">
+												add to cart
+											</button>
+											<p class="product__price">$19.00</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-lg-3">
+									<div class="product">
+										<div class="product__img">
+											<img src="assets/images/product-photo-9-400x400.png" />
+										</div>
+										<h6 class="product__title">Women’s Ripped Denim</h6>
+										<div class="product__footer">
+											<button class="product__add-to-cart-btn btn">
+												add to cart
+											</button>
+											<p class="product__price">$195.00</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-lg-3">
+									<div class="product">
+										<div class="product__img">
+											<img src="assets/images/Formal-Leather-Oxfords-Shoes-Men.webp" />
+										</div>
+										<h6 class="product__title">Formal Leather Oxfords Shoes Men</h6>
+										<div class="product__footer">
+											<button class="product__add-to-cart-btn btn">
+												add to cart
+											</button>
+											<p class="product__price">$29.99</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-lg-3 ">
+									<div class="product">
+										<div class="product__img">
+											<img
+												src="assets/images/Solid-2-Colors-Women-Crew-Neck-Short-Sleeve.webp"
+											/>
+										</div>
+										<h6 class="product__title">Women’s Ripped Denim</h6>
+										<div class="product__footer">
+											<button class="product__add-to-cart-btn btn">
+												add to cart
+											</button>
+											<p class="product__price">$16.00</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-lg-3">
+									<div class="product">
+										<div class="product__img">
+											<img src="assets/images/Zogaa-2019-Baseball-Jacket.webp" />
+										</div>
+										<h6 class="product__title">Women’s Ripped Denim</h6>
+										<div class="product__footer">
+											<button class="product__add-to-cart-btn btn">
+												add to cart
+											</button>
+											<p class="product__price">$30.00</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- categories section -->
 				<div class="section categories">
-					<!-- start category -->
-					<div class="category container">
-						<div class="row">
-							<!-- info -->
-							<div
-								class="category-info-wrapper col-xs-12 col-md-4 col-lg-3"
-								style="background: url('assets/images/clothing-5.jpg')"
-							>
-								<div class="overlay d-flex h-100">
-									<div class="category-info align-self-center">
-										<h2 class="category-title">clothing</h2>
-										<p class="category-description">
-											View our summer line of men and women’s clothing.
-										</p>
-										<button type="button" class="btn">view all</button>
+					<div class="container">
+						<!-- start category -->
+						<div class="category container">
+							<div class="row">
+								<!-- info -->
+								<div
+									class="category-info-wrapper col-xs-12 col-md-4 col-lg-3"
+									style="background: url('assets/images/clothing-5.jpg')"
+								>
+									<div class="overlay d-flex h-100">
+										<div class="category-info align-self-center">
+											<h2 class="category-title">clothing</h2>
+											<p class="category-description">
+												View our summer line of men and women’s clothing.
+											</p>
+											<button type="button" class="btn">view all</button>
+										</div>
 									</div>
 								</div>
-							</div>
 
-							<!-- products -->
-							<div class="category-products col-xs-12 col-md-8 col-lg-9">
-								<div class="row">
-									<div class="col-xs-12 col-sm-6 col-lg-4 ">
-										<div class="product">
-											<div class="product__img">
-												<img src="assets/images/image1xxl-2-2.jpg" />
-											</div>
-											<h6 class="product__title">Women’s Ripped Denim</h6>
-											<div class="product__footer">
-												<button class="product__add-to-cart-btn btn">
-													add to cart
-												</button>
-												<p class="product__price">$15.00</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-xs-12 col-sm-6 col-lg-4">
-										<div class="product">
-											<div class="product__img">
-												<img src="assets/images/image1xxl-10.jpg" />
-											</div>
-											<h6 class="product__title">Women’s Ripped Denim</h6>
-											<div class="product__footer">
-												<button class="product__add-to-cart-btn btn">
-													add to cart
-												</button>
-												<p class="product__price">$15.00</p>
+								<!-- products -->
+								<div class="category-products col-xs-12 col-md-8 col-lg-9">
+									<div class="row">
+										<div class="col-xs-12 col-sm-6 col-lg-4 ">
+											<div class="product">
+												<div class="product__img">
+													<img
+														src="assets/images/ROMWE-Brown-Soild-Button-Front-Cami-Top-With-Belted-Shorts-font-b-Women-b-font-Summer.jpg_220x220xz.webp"
+													/>
+												</div>
+												<h6 class="product__title">
+													Romwe Brown Soild Button Front Cami Top With Belted Shorts
+												</h6>
+												<div class="product__footer">
+													<button class="product__add-to-cart-btn btn">
+														add to cart
+													</button>
+													<p class="product__price">$24.00</p>
+												</div>
 											</div>
 										</div>
-									</div>
-									<div class="col-xs-12 col-sm-6 col-lg-4">
-										<div class="product">
-											<div class="product__img">
-												<img src="assets/images/shoes_v2.jpg" />
+										<div class="col-xs-12 col-sm-6 col-lg-4">
+											<div class="product">
+												<div class="product__img">
+													<img src="assets/images/New-Men-Shirts.jpg" />
+												</div>
+												<h6 class="product__title">Men Shirts</h6>
+												<div class="product__footer">
+													<button class="product__add-to-cart-btn btn">
+														add to cart
+													</button>
+													<p class="product__price">$18.00</p>
+												</div>
 											</div>
-											<h6 class="product__title">Women’s Ripped Denim</h6>
-											<div class="product__footer">
-												<button class="product__add-to-cart-btn btn">
-													add to cart
-												</button>
-												<p class="product__price">$15.00</p>
+										</div>
+										<div class="col-xs-12 col-sm-6 col-lg-4">
+											<div class="product">
+												<div class="product__img">
+													<img
+														src="assets/images/2018-New-Men-Joggers-Brand-Male-Trousers-Casual-Pants-Sweatpants-Jogger-.webp"
+													/>
+												</div>
+												<h6 class="product__title">
+													Men Joggers
+												</h6>
+												<div class="product__footer">
+													<button class="product__add-to-cart-btn btn">
+														add to cart
+													</button>
+													<p class="product__price">$16.00</p>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<!-- end category -->
+						<!-- end category -->
 
-					<!-- start category -->
-					<div class="category container">
-						<div class="row">
-							<!-- info -->
-							<div
-								class="category-info-wrapper col-xs-12 col-md-4 col-lg-3"
-								style="background: url('assets/images/accessories_v2.jpg')"
-							>
-								<div class="overlay d-flex h-100">
-									<div class="category-info align-self-center">
-										<h2 class="category-title">accessories</h2>
-										<p class="category-description">
-											View our summer line of men and women’s clothing.
-										</p>
-										<button type="button" class="btn">view all</button>
-									</div>
-								</div>
-							</div>
-
-							<!-- products -->
-							<div class="category-products col-xs-12 col-md-8 col-lg-9">
-								<div class="row">
-									<div class="col-xs-12 col-sm-6 col-lg-4 ">
-										<div class="product">
-											<div class="product__img">
-												<img src="assets/images/product-photo-40-400x400.png" />
-											</div>
-											<h6 class="product__title">Women’s Ripped Denim</h6>
-											<div class="product__footer">
-												<button class="product__add-to-cart-btn btn">
-													add to cart
-												</button>
-												<p class="product__price">$15.00</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-xs-12 col-sm-6 col-lg-4">
-										<div class="product">
-											<div class="product__img">
-												<img src="assets/images/product-photo-9-400x400.png" />
-											</div>
-											<h6 class="product__title">Women’s Ripped Denim</h6>
-											<div class="product__footer">
-												<button class="product__add-to-cart-btn btn">
-													add to cart
-												</button>
-												<p class="product__price">$15.00</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-xs-12 col-sm-6 col-lg-4">
-										<div class="product">
-											<div class="product__img">
-												<img src="assets/images/image1xxl-5-2.jpg" />
-											</div>
-											<h6 class="product__title">Women’s Ripped Denim</h6>
-											<div class="product__footer">
-												<button class="product__add-to-cart-btn btn">
-													add to cart
-												</button>
-												<p class="product__price">$15.00</p>
-											</div>
+						<!-- start category -->
+						<div class="category container">
+							<div class="row">
+								<!-- info -->
+								<div
+									class="category-info-wrapper col-xs-12 col-md-4 col-lg-3"
+									style="background: url('assets/images/accessories_v2.jpg')"
+								>
+									<div class="overlay d-flex h-100">
+										<div class="category-info align-self-center">
+											<h2 class="category-title">accessories</h2>
+											<p class="category-description">
+												View our summer line of men and women’s clothing.
+											</p>
+											<button type="button" class="btn">view all</button>
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-					</div>
-					<!-- end category -->
 
-					<!-- start category -->
-					<div class="category container">
-						<div class="row">
-							<!-- info -->
-							<div
-								class="category-info-wrapper col-xs-12 col-md-4 col-lg-3"
-								style="background: url('assets/images/shoes_v2.jpg')"
-							>
-								<div class="overlay d-flex h-100">
-									<div class="category-info align-self-center">
-										<h2 class="category-title">accessories</h2>
-										<p class="category-description">
-											View our summer line of men and women’s clothing.
-										</p>
-										<button type="button" class="btn">view all</button>
-									</div>
-								</div>
-							</div>
-
-							<!-- products -->
-							<div class="category-products col-xs-12 col-md-8 col-lg-9">
-								<div class="row">
-									<div class="col-xs-12 col-sm-6 col-lg-4 ">
-										<div class="product">
-											<div class="product__img">
-												<img src="assets/images/image1xxl-9-2.jpg" />
-											</div>
-											<h6 class="product__title">Women’s Ripped Denim</h6>
-											<div class="product__footer">
-												<button class="product__add-to-cart-btn btn">
-													add to cart
-												</button>
-												<p class="product__price">$15.00</p>
+								<!-- products -->
+								<div class="category-products col-xs-12 col-md-8 col-lg-9">
+									<div class="row">
+										<div class="col-xs-12 col-sm-6 col-lg-4 ">
+											<div class="product">
+												<div class="product__img">
+													<img
+														src="assets/images/YAZOLE-2017-Fashion-Quartz-Watch-Men-Watches.webp"
+													/>
+												</div>
+												<h6 class="product__title">Women’s Ripped Denim</h6>
+												<div class="product__footer">
+													<button class="product__add-to-cart-btn btn">
+														add to cart
+													</button>
+													<p class="product__price">$15.00</p>
+												</div>
 											</div>
 										</div>
-									</div>
-									<div class="col-xs-12 col-sm-6 col-lg-4">
-										<div class="product">
-											<div class="product__img">
-												<img src="assets/images/product-photo-9-400x400.png" />
-											</div>
-											<h6 class="product__title">Women’s Ripped Denim</h6>
-											<div class="product__footer">
-												<button class="product__add-to-cart-btn btn">
-													add to cart
-												</button>
-												<p class="product__price">$15.00</p>
+										<div class="col-xs-12 col-sm-6 col-lg-4">
+											<div class="product">
+												<div class="product__img">
+													<img
+														src="assets/images/4pcs-set-Handmade-Boho-Gypsy-Hippie.webp"
+													/>
+												</div>
+												<h6 class="product__title">Women’s Ripped Denim</h6>
+												<div class="product__footer">
+													<button class="product__add-to-cart-btn btn">
+														add to cart
+													</button>
+													<p class="product__price">$15.00</p>
+												</div>
 											</div>
 										</div>
-									</div>
-									<div class="col-xs-12 col-sm-6 col-lg-4">
-										<div class="product">
-											<div class="product__img">
-												<img src="assets/images/image1xxl-5-2.jpg" />
-											</div>
-											<h6 class="product__title">Women’s Ripped Denim</h6>
-											<div class="product__footer">
-												<button class="product__add-to-cart-btn btn">
-													add to cart
-												</button>
-												<p class="product__price">$15.00</p>
+										<div class="col-xs-12 col-sm-6 col-lg-4">
+											<div class="product">
+												<div class="product__img">
+													<img
+														src="assets/images/Vintage-Women-Bohemian-Pearl-Short-Choker-Necklace.webp"
+													/>
+												</div>
+												<h6 class="product__title">Women’s Ripped Denim</h6>
+												<div class="product__footer">
+													<button class="product__add-to-cart-btn btn">
+														add to cart
+													</button>
+													<p class="product__price">$15.00</p>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						<!-- end category -->
+
+						<!-- start category -->
+						<div class="category container">
+							<div class="row">
+								<!-- info -->
+								<div
+									class="category-info-wrapper col-xs-12 col-md-4 col-lg-3"
+									style="background: url('assets/images/shoes_v2.jpg')"
+								>
+									<div class="overlay d-flex h-100">
+										<div class="category-info align-self-center">
+											<h2 class="category-title">shoes</h2>
+											<p class="category-description">
+												View our summer line of men and women’s clothing.
+											</p>
+											<button type="button" class="btn">view all</button>
+										</div>
+									</div>
+								</div>
+
+								<!-- products -->
+								<div class="category-products col-xs-12 col-md-8 col-lg-9">
+									<div class="row">
+										<div class="col-xs-12 col-sm-6 col-lg-4 ">
+											<div class="product">
+												<div class="product__img">
+													<img
+														src="assets/images/Summer-Woman-Vulcanized-Casual-Shoes-Women-Platform-Sneakers.webp"
+													/>
+												</div>
+												<h6 class="product__title">Women’s Ripped Denim</h6>
+												<div class="product__footer">
+													<button class="product__add-to-cart-btn btn">
+														add to cart
+													</button>
+													<p class="product__price">$15.00</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-6 col-lg-4">
+											<div class="product">
+												<div class="product__img">
+													<img
+														src="assets/images/Formal-Leather-Oxfords-Shoes-Men.webp"
+													/>
+												</div>
+												<h6 class="product__title">Women’s Ripped Denim</h6>
+												<div class="product__footer">
+													<button class="product__add-to-cart-btn btn">
+														add to cart
+													</button>
+													<p class="product__price">$15.00</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-6 col-lg-4">
+											<div class="product">
+												<div class="product__img">
+													<img
+														src="assets/images/Women-Sandals-Bling-Crystal-Summer.webp"
+													/>
+												</div>
+												<h6 class="product__title">Women’s Ripped Denim</h6>
+												<div class="product__footer">
+													<button class="product__add-to-cart-btn btn">
+														add to cart
+													</button>
+													<p class="product__price">$15.00</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end category -->
 					</div>
-					<!-- end category -->
 				</div>
 			</div>
 		</main>

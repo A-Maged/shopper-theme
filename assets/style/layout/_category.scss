@@ -19,7 +19,7 @@
 			margin-bottom: 15px;
 			padding: 0;
 			.overlay {
-				padding: 15px;
+				padding: 20px;
 			}
 			.category-info {
 				// padding: 0 30px;
@@ -32,14 +32,14 @@
 				}
 				button {
 					text-transform: capitalize;
-					font-size: 16px;
+					font-size: 13px;
 					margin-top: 15px;
 					padding-top: 3px;
 					padding-bottom: 3px;
-					border-radius: 0;
 					color: #fff;
 					border: 2px solid #fff;
 					font-weight: bold;
+
 					&:hover {
 						background: #fff;
 						color: #333;

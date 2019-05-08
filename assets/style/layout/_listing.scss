@@ -1,0 +1,18 @@
+.listing {
+	background: #f2f2f2;
+
+	&__info {
+		text-align: center;
+		margin-bottom: 40px;
+
+		&__title {
+			font-weight: bold;
+			color: $title-color;
+		}
+		&__description {
+		}
+	}
+
+	&__products {
+	}
+}
