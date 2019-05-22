@@ -4,13 +4,14 @@
 	"main": "index.js",
 	"license": "MIT",
 	"scripts": {
-		"dev": "parcel home.html"
+		"dev": "parcel home.pug"
 	},
 	"dependencies": {
 		"bootstrap": "^4.3.1",
 		"jquery": "^3.4.1"
 	},
 	"devDependencies": {
+		"pug": "^2.0.3",
 		"sass": "^1.20.1"
 	}
 }
