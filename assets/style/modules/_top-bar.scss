@@ -1,10 +1,21 @@
 #top-bar {
+	padding: 0 0 10px;
 	background: #fff;
+	#news {
+		margin-bottom: 10px;
+		padding: 12px 0;
+		font-size: 12px;
+		font-weight: 700;
+		letter-spacing: 1.6px;
+		background: #585ece;
+		color: #fff;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
 	#logo {
 		padding: 0;
-		// height: 50px;
-		// width: 97px;
-		height: 65px;
+		height: 62px;
 		width: 109px;
 
 		img {
