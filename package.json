@@ -4,7 +4,7 @@
 	"main": "index.js",
 	"license": "MIT",
 	"scripts": {
-		"dev": "parcel home.pug"
+		"dev": "parcel templates/home.pug"
 	},
 	"dependencies": {
 		"bootstrap": "^4.3.1",
