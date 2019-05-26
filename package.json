@@ -2,15 +2,16 @@
 	"name": "theme",
 	"version": "1.0.0",
 	"main": "index.js",
-	"license": "MIT",
 	"scripts": {
-		"dev": "parcel templates/home.pug"
+		"dev": "parcel templates/home.pug",
+		"build": "parcel build templates/home.pug --out-dir docs"
 	},
 	"dependencies": {
 		"bootstrap": "^4.3.1",
 		"jquery": "^3.4.1"
 	},
 	"devDependencies": {
+		"cssnano": "^4.1.10",
 		"pug": "^2.0.3",
 		"sass": "^1.20.1"
 	}
