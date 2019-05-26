@@ -1,6 +1,6 @@
 $header-height: 380px;
 
-#header {
+#hero {
 	position: relative;
 	height: $header-height;
 	overflow: hidden;
@@ -34,7 +34,7 @@ $header-height: 380px;
 		}
 	}
 
-	#header-content {
+	#hero-content {
 		position: absolute;
 		top: 52%;
 		left: 50%;
