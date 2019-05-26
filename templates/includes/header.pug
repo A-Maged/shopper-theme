@@ -11,20 +11,18 @@ html(lang='en')
 
 		#top-bar
 			#news hurry up before the sale ends!
-			.container
-				.row
-					.col-md-2
-						#logo
-							img(src='../assets/images/logo-no-padding.png', alt='')
-					.col-md-10.align-self-center
-						.right-wrapper
-							nav#main-nav.text-right
-								a(href='#') clothing
-								a(href='#') accessories
-								a(href='#') shoes
-								a(href='#') blog
-								a(href='#') contact
-								a(href='#') cart
-							form.form-inline
-								input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search')
-
+			nav.navbar.navbar-expand-lg.navbar-light
+				a.navbar-brand(href='#') 
+					img(src='../assets/images/logo-no-padding.png', alt='')
+				button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+					span.navbar-toggler-icon
+				#navbarNav.collapse.navbar-collapse.w-100.order-3.dual-collapse2
+					ul.navbar-nav.text-center.ml-auto
+						li.nav-item.active
+							a.nav-link(href='#')
+								| Home 
+								span.sr-only (current)
+						li.nav-item
+							a.nav-link(href='#') Features
+						li.nav-item
+							a.nav-link(href='#') Pricing
