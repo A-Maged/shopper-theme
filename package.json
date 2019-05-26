@@ -4,8 +4,8 @@
 	"main": "home.html",
 	"homepage": "https://a-maged.github.io/shopper-theme/",
 	"scripts": {
-		"dev": "parcel templates/home.pug",
-		"build": "parcel build templates/home.pug --out-dir docs"
+		"dev": "NODE_ENV=development parcel templates/home.pug",
+		"build": "NODE_ENV=production parcel build templates/home.pug --out-dir docs"
 	},
 	"dependencies": {
 		"bootstrap": "^4.3.1",
