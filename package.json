@@ -2,9 +2,8 @@
 	"name": "theme",
 	"version": "1.0.0",
 	"main": "home.html",
-	"homepage": "https://a-maged.github.io/shopper-theme/",
 	"scripts": {
-		"dev": "NODE_ENV=development parcel templates/home.pug --no-minify",
+		"dev": "NODE_ENV=development parcel templates/home.pug ",
 		"build": "NODE_ENV=production parcel build templates/home.pug"
 	},
 	"dependencies": {
