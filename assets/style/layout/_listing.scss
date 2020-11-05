@@ -1,5 +1,16 @@
 .listing {
 	background: #f2f2f2;
+	
+	.container {
+		@media (max-width: 768px) {
+			max-width: unset;
+			width: 100%;
+			padding-right: 15px;
+			padding-left: 15px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
 
 	&__info {
 		text-align: center;
@@ -14,5 +25,8 @@
 	}
 
 	&__products {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 }
